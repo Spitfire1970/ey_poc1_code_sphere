@@ -1,0 +1,1 @@
+A web-based code editor with multiple UI themes that lets the user write and compile code in various languages, as well as ask an AI chatbot to fix the code or assist the user in writing code.
