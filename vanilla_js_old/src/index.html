@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Editor</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h3>Explorer</h3>
+        <button id="add-file"><i class="fas fa-plus"></i></button>
+      </div>
+      <ul id="explorer-list"></ul>
+    </aside>
+    <main>
+      <header>
+        <nav>
+          <ul id="open-files-tabs"></ul>
+          <button id="toggle-chat"><i class="fas fa-comment"></i></button>
+        </nav>
+      </header>
+      <section id="code-editor">
+        <div class="line-numbers"></div>
+        <div class="code-area-container">
+          <textarea id="code-area"></textarea>
+        </div>
+      </section>
+    </main>
+    <aside class="chat-window">
+      <div class="chat-header">
+        <h3>Chat</h3>
+      </div>
+      <div id="chat-messages"></div>
+      <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="Type your message...">
+        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+      </form>
+    </aside>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
